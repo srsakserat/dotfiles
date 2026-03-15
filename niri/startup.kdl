@@ -1,0 +1,13 @@
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store"
+spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"
+
+spawn-at-startup "fcitx5" "-d"
+spawn-at-startup "mako"
+//spawn-at-startup "nm-applet" "--indicator"
+//spawn-at-startup "blueman-applet"
+spawn-at-startup "swaybg" "-i" "/home/siri/Pictures/run-the-jewels-rick-8000x4500-9370.png" "-m" "fill"
+//spawn-at-startup "xwayland-satellite"
+spawn-at-startup "env XCURSOR_THEME=Bibata-Modern-Ice XCURSOR_SIZE=24 xwayland-satellite :0"
+spawn-at-startup "wlsunset" "-l" "13.7" "-L" "100.5" "-t" "3500" "-T" "6500"
+spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP=niri" "ELECTRON_OZONE_PLATFORM_HINT=auto" "NIXOS_OZONE_WL=1"
